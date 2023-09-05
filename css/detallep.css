@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+h1 {
+    color:white;
+    font-family: 'Source Serif 4', serif;
+    font-size: 50px;
+}
+
+.textos {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagenPelicula {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    opacity: 0.5;
+
+    
+}
