@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+}
+
+header {
+    border-bottom: 2px solid white;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.contenedor-input {
+    padding-top: 10px;
+    padding-left: 720px;
+}
+
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 0;
+ 
+ 
+}
+
+.text {
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.itemHeader {
+    display: flex;
+    background-color: #e00000;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding-top: 15px;
+    background-color: black;
+}
+.cajaPadre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cajaHija {
+    width: 26%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.imagen {
+    width: 100%;
+    border: 3px solid red;
+}
+
+.texto1 {
+    display: flex;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.navBar2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(200, 0, 0);
+    height: 50px;
+    padding-top: 20px;
+    list-style: none;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+footer {
+    border-top: 2px solid white;
+}
