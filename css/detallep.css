@@ -5,14 +5,22 @@ body {
 
 h1 {
     color:white;
-    font-family: 'Source Serif 4', serif;
-    font-size: 50px;
+    font-family: 'Alata', sans-serif;
+    font-size: 70px;
+    display: flex;
+    align-items: end;
+    margin: 13px;
+
 }
 
-.textos {
+h3 {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    margin: 13px;
 }
+
+
 
 .imagenPelicula {
     width: 100%;
