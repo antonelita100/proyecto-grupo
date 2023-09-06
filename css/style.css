@@ -80,6 +80,7 @@ header {
     margin-right: 30px;
 }
 
+
 .imagen {
     width: 100%;
     border: 3px solid red;
@@ -109,4 +110,24 @@ header {
 
 footer {
     border-top: 2px solid white;
+}
+
+.itemBusqueda{
+    display: flex;
+    background-color: #e00000;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.navBusqueda{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    padding: 20px;
 }
