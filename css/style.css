@@ -78,6 +78,8 @@ header {
 
 .cajaHija {
     width: 18%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -91,7 +93,7 @@ header {
     color:white;
     font-family: 'Urbanist', sans-serif;
     justify-content: flex-start;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .navBar2 {
@@ -258,7 +260,25 @@ p {
 }
 
 .infoExtra {
-    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.t {
     opacity: 0.5;
-   margin: 0px;
+    font-size: 14px;
+    margin: 0px;
+}
+.fa-star {
+    color: yellow;
+    display: flex;
+    padding-left: 180px;
+}
+.t1 {
+    opacity: 0.5;
+    font-size: 16px;
+    margin: 0px;
 }
