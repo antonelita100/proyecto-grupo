@@ -90,7 +90,8 @@ header {
     display: flex;
     color:white;
     font-family: 'Urbanist', sans-serif;
-    justify-content: center;
+    justify-content: flex-start;
+    font-size: 15px;
 }
 
 .navBar2 {
@@ -255,4 +256,13 @@ p {
 /* ordenar generos 3x3 */
 .navGenero{
     display: flex;
+}
+.fa-magnifying-glass {
+    color: #ffffff;
+}
+
+.infoExtra {
+    font-size: 10px;
+    opacity: 0.5;
+   margin: 0px;
 }
