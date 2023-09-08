@@ -255,6 +255,10 @@ p {
 
 }
 
+/* ordenar generos 3x3 */
+.navGenero{
+    display: flex;
+}
 .fa-magnifying-glass {
     color: #ffffff;
 }
