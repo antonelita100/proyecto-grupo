@@ -25,6 +25,10 @@ header {
     padding-left: 720px;
 }
 
+.nav {
+    padding-top: 10px;
+}
+
 .navBar {
     display: flex;
     flex-wrap: wrap;
@@ -58,11 +62,12 @@ header {
 .titulo {
     display: flex;
     color: #ffffff;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding-top: 15px;
     background-color: black;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 .cajaPadre {
     display: flex;
