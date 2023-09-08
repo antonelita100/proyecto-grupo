@@ -251,3 +251,8 @@ p {
     opacity: 0.5;
 
 }
+
+/* ordenar generos 3x3 */
+.navGenero{
+    display: flex;
+}
