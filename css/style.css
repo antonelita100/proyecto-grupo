@@ -57,27 +57,22 @@ header {
 
 .titulo {
     display: flex;
-    justify-content: center;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding-top: 15px;
     background-color: black;
+    padding-left: 25px;
 }
 .cajaPadre {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px;
 }
 
 .cajaHija {
-    width: 26%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 18%;
 }
 
 
@@ -89,8 +84,7 @@ header {
 .texto1 {
     display: flex;
     color:white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Urbanist', sans-serif;
     justify-content: center;
 }
 
