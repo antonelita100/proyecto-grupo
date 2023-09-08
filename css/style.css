@@ -158,6 +158,10 @@ h1 {
     border: solid rgb(9, 9, 22);
 }
 
+.contenedor-cast {
+    width: 300px;
+}
+
 .fa-heart-circle-plus {
     margin: 18px;
     margin-left: -1px;
