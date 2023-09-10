@@ -102,7 +102,8 @@ header {
     display: flex;
     color:white;
     font-family: 'Urbanist', sans-serif;
-    justify-content: center;
+    justify-content: flex-start;
+    font-size: 15px;
 }
 
 .navBar2 {
@@ -283,6 +284,7 @@ p {
     color: #ffffff;
 }
 
+<<<<<<< HEAD
 .p-serie {
 width: 500px;
 display: flex;
@@ -296,3 +298,10 @@ display: flex;
 margin: 13px;
 padding: 0px;
 }
+=======
+.infoExtra {
+    font-size: 10px;
+    opacity: 0.5;
+   margin: 0px;
+}
+>>>>>>> 0bee7e8620f92fd345f342b52ec005856b38eb8d
