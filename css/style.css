@@ -90,6 +90,8 @@ header {
 
 .cajaHija {
     width: 18%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -103,7 +105,8 @@ header {
     color:white;
     font-family: 'Urbanist', sans-serif;
     justify-content: flex-start;
-    font-size: 15px;
+    font-size: 18px;
+    width: 100%;
 }
 
 .navBar2 {
@@ -280,6 +283,10 @@ p {
 
 }
 
+/* ordenar generos 3x3 */
+.navGenero{
+    display: flex;
+}
 .fa-magnifying-glass {
     color: #ffffff;
 }
@@ -300,8 +307,29 @@ padding: 0px;
 }
 =======
 .infoExtra {
-    font-size: 10px;
-    opacity: 0.5;
-   margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
+<<<<<<< HEAD
 >>>>>>> 0bee7e8620f92fd345f342b52ec005856b38eb8d
+=======
+
+.t {
+    opacity: 0.5;
+    font-size: 14px;
+    margin: 0px;
+}
+.fa-star {
+    color: yellow;
+    display: flex;
+    padding-left: 180px;
+}
+.t1 {
+    opacity: 0.5;
+    font-size: 16px;
+    margin: 0px;
+}
+>>>>>>> 3d724eb348e3c1ae167821aa29359fc0ce68836d
