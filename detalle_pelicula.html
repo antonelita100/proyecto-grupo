@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/detallep.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +24,18 @@
 <body class="body">
 
     
-    <header>
+    <header class="header-pelicula">
         <section class="section">
+<<<<<<< HEAD
+            <img class="logo" src="./img/logo1.png" alt="logo">
+
+            <div class="contenedor-input">
+                <label for="buscador"></label>
+                <input type="text" name="nombre" id="buscador" placeholder="buscar"> <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+=======
             <img class="logo" src="../proyecto-grupo/img/logo1.png" alt="logo">
             
             <form action="./search-results.html" method="get"> 
@@ -36,6 +45,7 @@
 
                 </div>
             </form>
+>>>>>>> 0bee7e8620f92fd345f342b52ec005856b38eb8d
         </section>
 
 
@@ -71,20 +81,20 @@
     </section>
 
     <section>
-    <p>Gemma, diseñadora de una muñeca de inteligencia <br> artificial extraordinaria, se convierte en la tutora legal <br>
-        de una niña. Abrumada por la responsabilidad, cede <br> su educación y protección a la muñeca, sin saber que <br>las 
+    <p class="p-pelicula">Gemma, diseñadora de una muñeca de inteligencia artificial extraordinaria, se convierte en la tutora legal
+        de una niña. Abrumada por la responsabilidad, cede su educación y protección a la muñeca, sin saber que las 
         consecuencias serán terribles.</p>
 
-        <div class="fav">
-       <p >Agregar a favoritos</p> 
-       <a href="favorites.html">
-       <i class="fa-solid fa-heart-circle-plus"></i> </a>
+        
+        <div>
+    <button class="button-fav">Agregar a favoritos</button> <i class="fa-solid fa-heart-circle-plus"></i> 
         </div>
 
-<br><br><br><br><br>
-   <h3 class="cast">CAST: <br>
-    Amie Donald <br> Allison William 
-    <br> Jenna Davis <br> Violet McGraw </h3>
+
+   <div>
+    <h3 class="cast">CAST:
+    Amie Donald - Allison William -
+     Jenna Davis - Violet McGraw </h3> </div>
 
 </section>
 
@@ -104,14 +114,6 @@
         </nav>
     </footer>
 
-    <div>
-       <a href="./favorites.html"> <i class="fa-solid fa-heart"></i> </a>
-    </div>
-
-    <div>
-        <a href="./index.html">
-        <i class="fa-solid fa-house-chimney"></i> </a>
-    </div>
 
 </body>
 </html>
