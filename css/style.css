@@ -393,4 +393,9 @@ opacity: 0.6;
     margin: 0px; 
 }
 
-@media ()
+@media (max-width : 420px) {
+    #body-detallep
+    .section{
+        width: 900px;
+    }
+}
