@@ -398,8 +398,14 @@ opacity: 0.6;
     margin: 0px;
 }
 
+@media (max-width : 420px) {
+    #body-detallep
+    .section{
+        width: 900px;
+    }
+}
 
-@media(max-width:420px){
+@media(max-width:420px) {
 
     .section{
         display: flex;
@@ -442,6 +448,5 @@ opacity: 0.6;
         height: 40px;
         padding-top: 20px;
         list-style: none;
-        
     }
-}
+}   
