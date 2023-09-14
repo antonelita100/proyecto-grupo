@@ -67,7 +67,7 @@ header {
     padding-right: 50px;
     padding-bottom: 15px;
     justify-content: center;
-    align-items: center;
+    align-items: cenpter;
 
 }
 
@@ -292,7 +292,7 @@ p {
     color: #ffffff;
 }
 
-<<<<<<< HEAD
+
 .p-serie {
 width: 500px;
 display: flex;
@@ -306,7 +306,7 @@ display: flex;
 margin: 13px;
 padding: 0px;
 }
-=======
+
 .infoExtra {
     display: flex;
     flex-wrap: wrap;
@@ -314,9 +314,7 @@ padding: 0px;
     width: 100%;
     justify-content: space-between;
 }
-<<<<<<< HEAD
->>>>>>> 0bee7e8620f92fd345f342b52ec005856b38eb8d
-=======
+
 
 .t {
     opacity: 0.5;
@@ -333,4 +331,4 @@ padding: 0px;
     font-size: 16px;
     margin: 0px;
 }
->>>>>>> 3d724eb348e3c1ae167821aa29359fc0ce68836d
+
