@@ -319,30 +319,35 @@ p {
 }
 
 /* ordenar generos 3x3 */
+
+
 .navGenero{
+    margin: 10px;
+    margin: 10px;
     display: flex;
-   
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-    padding-bottom: 0px;
+    justify-content: space-around;
     color: #e20707bc;
+    padding: 10px;
 
 }
 
 
 .itemGenero{
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #9f0505a2;
+    justify-content: center;
     padding-top: 15px;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 4px;
+    padding-right: 4px;
     padding-bottom: 15px;
-    justify-items: space-between;
     align-items: center;
+    margin: 5px;
+    width: 30%;
+    display: flex;
+    margin: 10px;
 
 }
 .fa-magnifying-glass {
@@ -392,6 +397,7 @@ opacity: 0.6;
     font-size: 17px;
     margin: 0px;
 }
+
 
 @media(max-width:420px){
 
