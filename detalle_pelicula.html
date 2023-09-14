@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,30 +27,28 @@
 <body class="body-detalle">
     <header class="header-pelicula">
         <section class="section">
-
-            <img class="logo" src="./img/logo1.png" alt="logo">
-
-
             <img class="logo" src="../proyecto-grupo/img/logo1.png" alt="logo">
+
+            
+        <nav class="nav">
+            <ul class="navBar">
+
+                <li class="itemHeader"><a href="./index.html" class="text">Home</a></li>
+                <li class="itemHeader"><a href="./genero.html" class="text">Géneros</a></li>
+                <li class="itemHeader"><a href="./favorites.html" class="text">Mis favoritos</a></li>
+                
+            </ul>
+        </nav>
             
             <form action="./search-results.html" method="get"> 
                 <div class="contenedor-input">
                     <label for="buscador"></label>
-                    <input type="text" name="nombre" id="buscador" placeholder="buscar">
-
+                    <input type="text" name="nombre" id="buscador" placeholder="buscar"> <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
                 </div>
             </form>
-
         </section>
-
-
-        <nav>
-            <ul class="navBar">
-                <li class="itemHeader"><a href="./index.html" class="text">Inicio</a></li>
-                <li class="itemHeader"><a href="./genero.html" class="text">Géneros</a></li>
-                <li class="itemHeader"><a href="./favorites.html" class="text">Favoritas</a></li>
-            </ul>
-        </nav>
+        </header>
 
     <main>
     <section class="sectionD">
