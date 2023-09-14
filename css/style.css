@@ -322,7 +322,7 @@ p {
 /* ordenar generos 3x3 */
 .navGenero{
     display: flex;
-    flex-wrap: wrap;
+   
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -331,6 +331,7 @@ p {
     color: #e20707bc;
 
 }
+
 
 .itemGenero{
     display: flex;
