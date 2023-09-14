@@ -396,3 +396,50 @@ opacity: 0.6;
     margin: 0px;
 }
 }
+
+@media(max-width:420px){
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .itemHeader{
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+    }
+    .itemBusqueda{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+    .cajaHija{
+        width: 80%;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .navBar2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40px;
+        padding-top: 20px;
+        list-style: none;
+        
+    }
+}
