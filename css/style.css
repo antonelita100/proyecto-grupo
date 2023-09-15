@@ -525,6 +525,7 @@ opacity: 0.6;
         justify-content: end;
         margin: -35px;
         padding: 50px;
+        display: ;
     }
 
     .detalle-estrellas {
@@ -550,13 +551,5 @@ opacity: 0.6;
 
     .tituloserie-peli {
         font-size: 35px;
-    }
-    .t1{
-        margin: 0px;
-        padding: 0px;
-    }
-    .fa-solid.fa-star{
-        padding-left: 210px;
-
     }
 }
