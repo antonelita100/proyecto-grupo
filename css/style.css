@@ -366,14 +366,18 @@ opacity: 0.6;
 .fa-star {
     color: yellow;
     display: flex;
-    padding-left: 180px;
+    padding-left: 160px;
 }
 .t1 {
     opacity: 0.5;
     font-size: 17px;
     margin: 0px;
     color: white;
-    font-family: 'Urbanist', sans-serif;;
+    font-family: 'Urbanist', sans-serif;
+    padding-left: 0px;
+}
+.oculto{
+    display: none;
 }
 
 .divImage {
