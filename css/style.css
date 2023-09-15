@@ -68,6 +68,9 @@ header {
     padding-bottom: 10px;
     margin: 20px;
 }
+.imgSerie {
+    display: none;
+}
 
 .titulo {
     display: flex;
@@ -293,7 +296,6 @@ p {
 }
 
 
-/* ordenar generos 3x3 */
 
 .navGenero{
     margin: 10px;
@@ -380,13 +382,20 @@ opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.divImage1 {
+    background-image: url(../img/Hill-house-1.jpeg);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media(max-width:420px) {
-    .section{
+    .section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-content: center;
     }
 
     .itemBusqueda{
@@ -404,15 +413,6 @@ opacity: 0.6;
         width: 80%;
         display: flex;
         margin-bottom: 40px;
-    }
-    .navBar2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 40px;
-        padding-top: 20px;
-        list-style: none;
-
     }
 
     .logo {
@@ -481,18 +481,6 @@ opacity: 0.6;
     margin: 5px;
     }
 
-    .imagenPelicula{
-        width: 100%;
-        height: 500px;
-        margin: -10px;
-    }
-
-    .imagenSerie {
-        width: 100%;
-        height: 500px;
-        margin: -10px;
-    }
-
     .tituloserie-peli {
         font-size: 45px;
     }
@@ -525,6 +513,8 @@ opacity: 0.6;
 
     .detalle-estrellas {
         font-size: 13px;
+        margin: 0px;
+        padding-left: 10px;
     }
 
     h3.rating {
@@ -546,5 +536,46 @@ opacity: 0.6;
 
     .tituloserie-peli {
         font-size: 35px;
+    }
+    .divImage1 {
+        opacity: 0.8;
+        background-image: none;
+    }
+
+    .duracion {
+        font-size: 13px;
+        padding-left: 10px;
+        margin: 0px;
+        margin-bottom: 10px;
+    
+    }
+    .datos {
+        margin: 0px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .cast {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    .imgSerie {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .p-serie {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        padding: 0px;
+        opacity: 0.8;
+         width: 100%;
     }
 }
