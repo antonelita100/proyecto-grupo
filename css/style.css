@@ -400,131 +400,6 @@ opacity: 0.6;
     font-family: 'Urbanist', sans-serif;;
 }
 
-<<<<<<< HEAD
-
-@media (max-width : 420px) {
-    #body-detallep
-    .section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        
-    }
-    
-    .nav { 
-        padding-top: 6px;
-    }
-
-    .itemHeader{
-        display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        width: 70px;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 10px;
-    }
-
-    .imagenSerie{
-        width: 100%;
-        height: 500px;
-    }
-
-    .tituloserie-peli {
-        font-size: 35px;
-    }
-
-    .detalle-estrellas {
-        font-size: 13px;
-    }
-
-    h3.rating {
-        font-size: 16px;
-        padding-top: 3px;
-    }
-
-    .duracion {
-        font-size: 13px;
-    }
-
-    .datos {
-        font-size: 14px;
-    }
-
-    .p-serie-pelicula {
-        font-size: 15px;
-    }
-
-    .agregar-favoritos {
-        width: 100px;
-    }
-
-    .agregar-favoritos {
-        font-size: 12px;
-        color: beige;
-        width: 15%;
-        text-decoration: none;
-        background-color: rgba(216, 238, 238, 0.437);
-        border-radius: 50px;
-        font-weight: 800;
-        border: 1px solid white;
-        padding: 5px 15px;
-        margin: 13px;
-        
-    }
-
-    .cast {
-        font-size: 13px;
-        display: flex;
-        justify-content: end;
-        margin: -35px;
-        padding: 50px;
-
-    }
-
-    
-@media (max-width : 420px) {
-    #body-detallep
-    
-    .section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        
-    }
-
-    .imagenPelicula{
-        width: 100%;
-        height: 500px;
-    }
-
-    .tituloserie-peli {
-        font-size: 45px;
-    }
-
-    .p-serie-pelicula {
-        font-size: 15px;
-    }
-}
-
-       
-
-@media(max-width:420px){
-=======
-@media (max-width : 420px) {
-    #body-detallep
-    .section{
-        width: 900px;
-    }
-}
->>>>>>> 9e57144c7f31cfbc2db987e1a53b4ccd905d3b19
-
 @media(max-width:420px) {
     .section{
         display: flex;
@@ -557,11 +432,7 @@ opacity: 0.6;
         height: 40px;
         padding-top: 20px;
         list-style: none;
-<<<<<<< HEAD
-        
-    }
-}}}
-=======
+
     }
 
     .logo {
@@ -629,6 +500,70 @@ opacity: 0.6;
     display: flex;
     margin: 5px;
     }
-}
 
->>>>>>> 9e57144c7f31cfbc2db987e1a53b4ccd905d3b19
+    .imagenPelicula{
+        width: 100%;
+        height: 500px;
+        margin: -10px;
+    }
+
+    .imagenSerie {
+        width: 100%;
+        height: 500px;
+        margin: -10px;
+    }
+
+    .tituloserie-peli {
+        font-size: 45px;
+    }
+
+    .p-serie-pelicula {
+        font-size: 15px;
+    }
+
+    .agregar-favoritos {
+        font-size: 12px;
+        color: beige;
+        width: 15%;
+        text-decoration: none;
+        background-color: rgba(216, 238, 238, 0.437);
+        border-radius: 50px;
+        font-weight: 800;
+        border: 1px solid white;
+        padding: 5px 15px;
+        margin: 13px;
+        
+    }
+    
+    .cast {
+        font-size: 13px;
+        display: flex;
+        justify-content: end;
+        margin: -35px;
+        padding: 50px;
+    }
+
+    .detalle-estrellas {
+        font-size: 13px;
+    }
+
+    h3.rating {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+    .duracion {
+        font-size: 13px;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .p-serie-pelicula {
+        font-size: 15px;
+    }
+
+    .tituloserie-peli {
+        font-size: 35px;
+    }
