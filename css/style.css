@@ -569,6 +569,7 @@ p {
         font-size: 13px;
         display: flex;
         justify-content: flex-start;
+        width: 50%;
 
     }
 
