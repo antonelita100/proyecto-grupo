@@ -68,7 +68,14 @@ header {
     padding-bottom: 10px;
     margin: 20px;
 }
+<<<<<<< HEAD
 /*  */
+=======
+.imgSerie {
+    display: none;
+}
+
+>>>>>>> 4f10a5f411191da0b21e7b316c8c46060d25c1cf
 .titulo {
     display: flex;
     color: #ffffff;
@@ -214,13 +221,12 @@ h2 {
 }
 
 .cast {
-    display: flex;
-    justify-content: end;
-    margin-left: 1230px;
     align-items: start;
     color: white;
     font-family: 'Jost', sans-serif;
     font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
     width: 150px;
     opacity: 0.5;
 }
@@ -262,7 +268,6 @@ h3.rating {
 
 }
 
-/* test de prueba*/
 
 .fa-heart {
     opacity: 0.6;
@@ -286,39 +291,13 @@ p {
 }
 
 
-.imagenPelicula {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    position: absolute;
-    z-index: -1; 
-    opacity: 0.5;
-}
-
 .imagenSerie {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: start;
-    align-items: start;
-    position: absolute;
-    z-index: -1; 
-    opacity: 0.5;
-   /* z-index sirve para ordenar la superposicion de etiquetas*/
-}
-
-.footer-detalle {
-
     position: fixed;
-    bottom: 0;
-    width: 100%;
     opacity: 0.5;
-
 }
 
-/* ordenar generos 3x3 */
 
 
 .navGenero{
@@ -356,20 +335,20 @@ p {
   
 
 
-.p-serie {
-width: 500px;
-display: flex;
-margin: 6px;
-padding: 0px;
-opacity: 0.8;
+    .p-serie {
+    width: 500px;
+    display: flex;
+    margin: 13px;
+    padding: 0px;
+    opacity: 0.6;
 }
 
-.p-pelicula {
-width: 500px;
-display: flex;
-margin: 13px;
-padding: 0px;
-opacity: 0.6;
+    .p-pelicula {
+    width: 500px;
+    display: flex;
+    margin: 13px;
+    padding: 0px;
+    opacity: 0.6;
 
 }
 
@@ -390,32 +369,61 @@ opacity: 0.6;
 .fa-star {
     color: yellow;
     display: flex;
-    padding-left: 180px;
+    padding-left: 160px;
 }
 .t1 {
     opacity: 0.5;
     font-size: 17px;
     margin: 0px;
     color: white;
-    font-family: 'Urbanist', sans-serif;;
+    font-family: 'Urbanist', sans-serif;
+    padding-left: 0px;
+}
+.oculto{
+    display: none;
+}
+
+.divImage {
+    background-image: url(../img/megan-fondo.png);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.divImage1 {
+    background-image: url(../img/Hill-house-1.jpeg);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 67vh;
 }
 
 @media(max-width:420px) {
-    .section{
+    .section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-content: center;
     }
-
-    .itemBusqueda{
+    .navBusqueda {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        height: 100%;
+    }
+    
+    .itemBusqueda {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
-        width: 80px;
         justify-content: center;
         align-items: center;
         height: 25px;
@@ -424,15 +432,6 @@ opacity: 0.6;
         width: 80%;
         display: flex;
         margin-bottom: 40px;
-    }
-    .navBar2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 40px;
-        padding-top: 20px;
-        list-style: none;
-
     }
 
     .logo {
@@ -489,7 +488,7 @@ opacity: 0.6;
         background-color: black;
     }
     .navGenero {
-    margin: 0px
+        margin: 0px
     }
 
     .itemGenero {
@@ -501,24 +500,10 @@ opacity: 0.6;
     margin: 5px;
     }
 
-    .imagenPelicula{
-        width: 100%;
-        height: 500px;
-        margin: -10px;
-    }
-
-    .imagenSerie {
-        width: 100%;
-        height: 500px;
-        margin: -10px;
-    }
-
     .tituloserie-peli {
-        font-size: 45px;
-    }
-
-    .p-serie-pelicula {
-        font-size: 15px;
+        font-size: 35px;
+        margin: 8px;
+        padding: 0px;
     }
 /*  */
     .agregar-favoritos {
@@ -545,25 +530,79 @@ opacity: 0.6;
 
     .detalle-estrellas {
         font-size: 13px;
+        margin: 0px;
+        padding-left: 10px;
+        align-items: start;
     }
 
     h3.rating {
+        display: flex;
         font-size: 16px;
-        padding-top: 3px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 5px;
     }
 
-    .duracion {
-        font-size: 13px;
-    }
-
-    .datos {
-        font-size: 14px;
-    }
-
-    .p-serie-pelicula {
-        font-size: 15px;
-    }
 
     .tituloserie-peli {
         font-size: 35px;
     }
+
+    .divImage1 {
+        opacity: 0.8;
+        background-image: none;
+    }
+
+    .divImage {
+        opacity: 0.8;
+        background-image: none;
+    }
+
+    .duracion {
+        font-size: 13px;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    .datos {
+        margin: 0px;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .cast {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+
+    }
+
+    .imgSerie {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .p-serie {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding: 0px;
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    .p-pelicula{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding: 0px;
+        opacity: 0.8;
+        width: 100%;
+    }
+}
