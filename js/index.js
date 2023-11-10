@@ -73,18 +73,11 @@ fetch(url3)
         console.log(array[i].poster_path)
         console.log(array[i].release_date)
         console.log(array[i].vote_average)
-        seccionSerie.innerHTML += 
-        `<article class="cajaHija">
-        <a href="./detalle_serie.html"><img class="imagen" src="./img/5c.jpg" alt=""> </a>
-        <h2 class="texto1">The Walking Dead</h2>
-        <div class="infoExtra"><h3 class="t">2018</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">3.5</h3></div>
-        </article>;
+        seccionSerie.innerHTML += `<article class="cajaHija">
+        <a href="./detalle_serie.html"><img class="imagen" src="./img/5c.jpg" alt=""> </a>  <h2 class="texto1">The Walking Dead</h2> <div class="infoExtra"><h3 class="t">2018</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">3.5</h3></div> </article>`;
     }
-    
+
     return datos;
 
+
 })
-
-
-
-
