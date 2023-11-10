@@ -1,8 +1,7 @@
 
 /* https://api.themoviedb.org/3/movie/76341?api_key=a42737f60c529bfe7e9586db8cb132a1c  ...*/
 
-let url = https://api.themoviedb.org/3/movie/76341?api_key=a42737f60c529bfe7e9586db8cb132a1c
-let 
+
 
 
 
@@ -14,13 +13,17 @@ fetch(url)
     return r.json();
 })
 .then(function (datos) {
-    console.log(datos.url);
-    let array = datos.provincias;
+    console.log(datos.results);
+    let peliculas = datos.results;
+    let seccion = document.querySelector(".cajaPadre");
 
-    for ( let i = 0 ; i < array.length; i++) {
-        console.log(array[i].nombre);
-        listaProvincias.innerHTML += `<li><a href="./detalleProvincia.html?id_provincia=${array[i].id}">${array[i].nombre}</a></li>`
-    }
+    let todas_pelis = ""
+
+    for ( let i = 0 ; i < 5 ; i++) {
+        todas_pelis += ` <article class="cajaHija">  <a href="./detalle_pelicula.html"><img class="imagen" src="./img/3b.jpg" alt=""> </a>
+        <h2 class="texto1">El Legajo del Diablo</h2>
+        <div class="infoExtra"><h3 class="t">2018</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">3.5</h3></div>
+</article>`
 
     
     return datos;
