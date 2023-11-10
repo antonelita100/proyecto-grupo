@@ -68,14 +68,10 @@ header {
     padding-bottom: 10px;
     margin: 20px;
 }
-<<<<<<< HEAD
-/*  */
-=======
 .imgSerie {
     display: none;
 }
 
->>>>>>> 4f10a5f411191da0b21e7b316c8c46060d25c1cf
 .titulo {
     display: flex;
     color: #ffffff;
@@ -526,6 +522,7 @@ p {
         justify-content: end;
         margin: -35px;
         padding: 50px;
+        display: ;
     }
 
     .detalle-estrellas {
