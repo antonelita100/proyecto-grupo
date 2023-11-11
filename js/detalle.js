@@ -1,28 +1,30 @@
 let APIkey = "42737f60c529bfe7e9586db8cb132a1c"
 
-let url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${APIkey}`
+let url = `https://api.themoviedb.org/3/movie/54052?api_key=42737f60c529bfe7e9586db8cb132a1c`
 
-let contenido = document.querySelector('.sectionD')
-let seleccionPelicula = section.querySelector()
+let titulo = document.querySelector(".tituloserie-peli");
+let imagenPeli = document.querySelector(".imgSerie");
+let descripcion = document.querySelector(".p-pelicula");
+let rating = document.querySelector(".rating")
 
 fetch(url)
-.then(function (r) {
-    
-    return r.json();
-})
-.then(function (datos) {
-    console.log(datos);
-    let array = datos.results;
-    console.log(array);
-
-    for ( let i = 0 ; i < 1 ; i++) {
-        console.log(array[i])
-        
-    
-    return datos;
+.then(function(res) {
+    return res.json();
 })
 
-.catch(function (errores) {
-    console.log(errores)
-    return errores;
-});
+.then(function(data) {
+   console.log(data)
+   titulo.innerText = data.title;
+   imgSerie.src = `https://image.tmdb.org/t/p/w342/eQw4tC4onERymDQ6kESTqI9DC7t.jpg`
+   descripcion.innerText = data.overview;
+   rating.innerText = data.vote_average
+
+
+    return data
+})
+
+
+.catch(function(error) {
+    return error
+})
+
