@@ -1,52 +1,56 @@
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let nombre = queryStringObj.get("nombre"); 
 
-let url = 
 
 
-fetch(url)
+
+let acaVaLaAPIKey = "42737f60c529bfe7e9586db8cb132a1c";
+let url1 = `https://api.themoviedb.org/3/search/movie?api_key=${acaVaLaAPIKey}&query=${nombre}`; 
+let url2 = `https://api.themoviedb.org/3/search/tv?api_key=${acaVaLaAPIKey}&query=${nombre}`; 
+
+
+
+let contenido = document.querySelector(".cajaPadre");
+
+
+
+
+fetch(url1)
 .then(function (r) {
     
     return r.json();
 })
 .then(function (datos) {
-    console.log(datos.url);
-    let array = datos.provincias;
+    let array = datos.results; 
+    console.log(array)
+     
 
-   // for ( let i = 0 ; i < array.length; i++) {
-       // console.log(array[i].nombre);
-       // listaProvincias.innerHTML += `<li><a href="./detalleProvincia.html?id_provincia=${array[i].id}">${array[i].nombre}</a></li>`
-   // }
+    for (let i = 0; i < array.length; i++) {
+        contenido.innerHTML += `<article class="cajaHija"> <a href="./detalle_pelicula.html"> <img class="imagen" src="https://image.tmdb.org/t/p/w500${array[i].poster_path}" alt=""> </a>  <h2 class="texto1">${array[i].original_title}</h2> <div class="infoExtra"><h3 class="t">${array[i].release_date}</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">${array[i].vote_average}</h3></div> </article>`;
+      }
+    
+    return datos;
+})
 
+
+
+fetch(url2)
+.then(function (r) {
+    
+    return r.json();
+})
+.then(function (datos) {
+    let array = datos.results;
+    console.log(array)
+        
+    for (let i = 0; i < array.length; i++) {
+        contenido.innerHTML += `<article class="cajaHija"> <a href="./detalle_pelicula.html"> <img class="imagen" src="https://image.tmdb.org/t/p/w500${array[i].poster_path}" alt=""> </a>  <h2 class="texto1">${array[i].original_title}</h2> <div class="infoExtra"><h3 class="t">${array[i].release_date}</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">${array[i].vote_average}</h3></div> </article>`;
+      }
+    
 
     return datos;
 })
-.catch(function (errores) {
-    console.log(errores)
-    return errores;
-});
 
 
 
-const busqueda = document.querySelector("#buscador");
-const form = document.querySelector(".form")
-
-busqueda.addEventListener("keydown", function(e) {
-    console.log(e.value); 
-}) 
-
-form.addEventListener("submit", function(e){
-    e.preventDefault();
-
-    if (busqueda.value == "") {
-        alert("Ingrese lo que desea buscar");
-    }
-
-    
-    else {
-        this.submit ();
-    }
-})
-
-
-
-
-/*console.log(e.key);  --> imprime letra por letra en la consola*/ /*recupera todos los elementos*/  
