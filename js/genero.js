@@ -14,7 +14,7 @@ fetch(url)
     console.log(array)
 
     for (let i = 0; i < 9; i++) {
-      contenido.innerHTML += `<li class="itemGenero"><a href="./detalle-genero.html" class="text">${array[i].name}</a></li>`;
+      contenido.innerHTML += `<li class="itemGenero"><a href="./detalle-genero.html?idPelicula=${array[i].id}&name=${array[i].name}" class="text">${array[i].name}</a></li>`;
     }
 
     return datos;
@@ -34,7 +34,7 @@ fetch(url)
     console.log(array)
 
     for (let i = 0; i < 9; i++) {
-      contenido2.innerHTML += `<li class="itemGenero"><a href="./detalle-genero.html" class="text">${array[i].name}</a></li>`;
+      contenido2.innerHTML += `<li class="itemGenero"><a href="./detalle-genero.html?idSerie=${array[i].id}" class="text">${array[i].name}</a></li>`;
     }
 
     return datos;
@@ -44,3 +44,6 @@ fetch(url)
     console.log(error);
     return error;
   });
+
+
+
