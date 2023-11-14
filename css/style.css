@@ -215,6 +215,14 @@ h2 {
     
 }
 
+.anio {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 13px;
+    opacity: 0.5;
+}
+
+
 .duracion {
     color: white;
     font-family: 'Urbanist', sans-serif;
@@ -298,7 +306,7 @@ p {
 }
 
 
-.imagenSerie {
+#imagenSerie {
     width: 100vw;
     display: flex;
     position: fixed;
@@ -585,7 +593,7 @@ p {
 
     }
 
-    .imgSerie {
+    #imgSerie {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
