@@ -65,3 +65,7 @@ fetch(urlSer)
     console.log(error);
     return error;
   });
+
+
+
+  
