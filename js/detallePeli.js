@@ -1,7 +1,6 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idPelicula = qsObj.get("idPelicula")
-alert(idPelicula)
 
 let APIkey = "42737f60c529bfe7e9586db8cb132a1c"
 
