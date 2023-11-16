@@ -1,7 +1,7 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idSerie = qsObj.get("idSerie")
-alert(idSerie)
+
 
 let APIkey = "42737f60c529bfe7e9586db8cb132a1c"
 
