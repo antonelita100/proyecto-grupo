@@ -55,7 +55,7 @@ fetch(urlSer)
     console.log(array2)
 
     for (let i = 0; i < 5; i++) {
-      contenido3.innerHTML += `<article class="cajaHija">  <a href="./detalle_pelicula.html?idSerie=${array2[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${array2[i].poster_path}" alt=""> </a> <h2 class="texto1">${array2[i].name}</h2> <div class="infoExtra"><h3 class="t">${array2[i].first_air_date}</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">${array2[i].vote_average}</h3></div> </article>`;
+      contenido3.innerHTML += `<article class="cajaHija">  <a href="./detalle_serie.html?idSerie=${array2[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${array2[i].poster_path}" alt=""> </a> <h2 class="texto1">${array2[i].name}</h2> <div class="infoExtra"><h3 class="t">${array2[i].first_air_date}</h3> <i class="fa-solid fa-star"></i> <h3 class="t1">${array2[i].vote_average}</h3></div> </article>`;
     }
 
     return datos;
