@@ -4,13 +4,11 @@ let nombre = queryStringObj.get("nombre");
 
 
 function redirigirConDato() {
-    // Obtener el valor del input
-    var valorInput = document.getElementById('buscador').value;
 
-    // Construir la URL con el parámetro "dato"
-    var nuevaURL = window.location.href + '?dato=' + encodeURIComponent(valorInput);
+    let valorInput = document.getElementById('buscador').value;
 
-    // Redirigir a la nueva URL
+    let nuevaURL = window.location.href + '?dato=' + encodeURIComponent(valorInput);
+
     window.location.href = nuevaURL;
 }
 
@@ -38,10 +36,15 @@ fetch(url1)
     
     return datos;
 })
+.catch(function (error) {
+    alert("No se encontraron resultados");
+    contenido.innerHTML += '<h1 class="titulo">No se encontraron resultados</h1>';
+    return error;
+  });
 
 
 
-fetch(url2)
+  fetch(url2)
 .then(function (r) {
     
     return r.json();
@@ -57,6 +60,13 @@ fetch(url2)
 
     return datos;
 })
+.catch(function (error) {
+    alert("No se encontraron resultados");
+    contenido.innerHTML += '<h1 class="titulo">No se encontraron resultados</h1>';
+    return error;
+  });
+
+
 
 
 
