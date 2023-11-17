@@ -40,10 +40,9 @@ fetch(url)
     return error
 })
 
-let recomendaciones = document.querySelector(".recomendaciones");
-recomendaciones.addEventListener("click", function() {
-    let idPelicula = '278'; // Asegúrate de reemplazar esto con el ID de la película
-    let APIkey = '42737f60c529bfe7e9586db8cb132a1c'; // Reemplaza esto con tu clave API real
+let rec = document.querySelector(".recomendaciones");
+rec.addEventListener("click", function() {
+    console.log(idPelicula)// Reemplaza esto con tu clave API real
 
     fetch(`https://api.themoviedb.org/3/movie/${idPelicula}/recommendations?api_key=${APIkey}`)
     .then(function(res) {
