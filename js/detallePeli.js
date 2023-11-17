@@ -40,34 +40,26 @@ fetch(url)
     return error
 })
 
-let rec = document.querySelector(".recomendaciones");
-rec.addEventListener("click", function() {
-    console.log(idPelicula)// Reemplaza esto con tu clave API real
+document.addEventListener("DOMContentLoaded", function() {
+    let recomendaciones = document.querySelector(".recomendaciones");
 
-    fetch(`https://api.themoviedb.org/3/movie/${idPelicula}/recommendations?api_key=${APIkey}`)
-    .then(function(res) {
-        return res.json();
-    })
-    .then(function(dataR) {
-        let recomendaciones = document.querySelector(".recomendaciones");
-        recomendaciones.addEventListener("click", function() {
-            let idPelicula = '278'; // ID de la película
-            let APIkey = '42737f60c529bfe7e9586db8cb132a1c'; // Tu clave API
-        
+    if (recomendaciones) {
+        recomendaciones.addEventListener("click", function() {  
             fetch(`https://api.themoviedb.org/3/movie/${idPelicula}/recommendations?api_key=${APIkey}`)
             .then(function(res) {
                 return res.json();
             })
             .then(function(dataR) {
-                console.log(dataR);
                 const contenedor = document.querySelector('#contenedor-recomendaciones');
                 contenedor.innerHTML = ''; // Limpiar contenido anterior
-        
-                for (let i = 1; i < 5; i++) {
+
+                for (let i = 0; i < dataR.results.length && i < 5; i++) {
                     const pelicula = dataR.results[i];
                     contenedor.innerHTML += `
-                        <h4>${pelicula.title}</h4>
-                        <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}">
+                        <div class="recomendacion-item">
+                            <h2>${pelicula.title}</h2> <!-- Cambiado de pelicula.name a pelicula.title -->
+                            <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}">
+                        </div>
                     `;
                 }
             })
@@ -75,4 +67,7 @@ rec.addEventListener("click", function() {
                 console.log("Error:", error);
             });
         });
-    })})
+    } else {
+        console.log("Error: .recomendaciones no encontrado en el DOM");
+    }
+});

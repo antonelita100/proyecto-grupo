@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    
+    
 }
 
 header { 
@@ -158,31 +160,33 @@ header {
     color:white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    
 }
 #contenedor-recomendaciones {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-end;
     
 }
 
 .recomendacion-item {
-    margin: 10px;
+
     text-align: center;
     padding: 18px;
 }
 
 .recomendacion-item img {
-    max-width: 50%;
-    height: auto;
+    max-width: 70%;
+
 }
 footer {
     border-top: 2px solid white;
     position: absolute;
     width: 100%;
     height: 40px;
- 
+
+
 }
 
 .itemBusqueda{

@@ -32,11 +32,11 @@ fetch(urlS)
     genero.innerText = "Genero: " + data.genres[1].name
     temporada.innerText = "Temporadas: " + data.number_of_seasons;
     
-    /*let generosTexto = "Género: ";
+    let generosTexto = "Género: ";
     for (let i = 0; i < data.genres.length; i++) {
         generosTexto += data.genres[i].name;
         if (i < data.genres.length - 1) {
-            generosTexto += ', '; }} */
+            generosTexto += ', '; }} 
 
 })
 
@@ -45,14 +45,12 @@ fetch(urlS)
 })
 
 document.addEventListener("DOMContentLoaded", function() {
+
     let recomendaciones = document.querySelector(".recomendaciones");
 
     if (recomendaciones) {
-        recomendaciones.addEventListener("click", function() {
-            let idSerie = '278'; // Asegúrate de reemplazar esto con el ID de la serie
-            let APIkey = '42737f60c529bfe7e9586db8cb132a1c'; // Tu clave API
-
-            fetch(`https://api.themoviedb.org/3/movie/${idSerie}/recommendations?api_key=${APIkey}`)
+        recomendaciones.addEventListener("click", function() {  
+            fetch(`https://api.themoviedb.org/3/tv/${idSerie}/recommendations?api_key=${APIkey}`)
             .then(function(res) {
                 return res.json();
             })
@@ -61,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 contenedor.innerHTML = ''; // Limpiar contenido anterior
 
                 for (let i = 0; i < dataR.results.length && i < 5; i++) {
-                    const pelicula = dataR.results[i];
+                    const serie = dataR.results[i];
                     contenedor.innerHTML += `
                         <div class="recomendacion-item">
-                            <h2>${pelicula.title}</h2>
-                            <img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" alt="${pelicula.title}">
+                            <h2>${serie.name}</h2>
+                            <img src="https://image.tmdb.org/t/p/w500${serie.poster_path}" alt="${serie.name}">
                         </div>
                     `;
                 }
@@ -75,6 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     } else {
-        console.log("Error");
+        console.log("Error: .recomendaciones no encontrado en el DOM");
     }
 });
