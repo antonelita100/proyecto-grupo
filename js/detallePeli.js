@@ -2,6 +2,7 @@ let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idPelicula = qsObj.get("idPelicula")
 
+
 let APIkey = "42737f60c529bfe7e9586db8cb132a1c"
 
 let url = `https://api.themoviedb.org/3/movie/${idPelicula}?api_key=${APIkey}`
