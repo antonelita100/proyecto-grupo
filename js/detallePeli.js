@@ -71,3 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Error: .recomendaciones no encontrado en el DOM");
     }
 });
+
+
+
